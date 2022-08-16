@@ -1,4 +1,4 @@
-# dashboard-vue2
+# news-app
 
 ## Project setup
 ```
