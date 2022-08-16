@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="grey lighten-4" style="height: 100%">
+    <div class="app__container" style="height: 100%">
       <Navbar />
       <v-main class="mx-4 mb-4">
         <router-view />
@@ -23,5 +23,9 @@ export default {
 <style>
 .view__title {
   margin-left: 12px;
+}
+
+.app__container {
+  background: #242b39;
 }
 </style>

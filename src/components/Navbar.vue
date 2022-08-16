@@ -1,33 +1,28 @@
 <template>
   <div>
-    <v-app-bar app elevate-on-scroll>
-      <v-icon class="grey--text" v-on:click="navOpenCloseHandler">
+    <v-app-bar color="#353e52" app elevate-on-scroll>
+      <v-icon class="white--text" v-on:click="navOpenCloseHandler">
         mdi-menu
       </v-icon>
 
-      <v-toolbar-title  class="text-uppercase grey--text toolbar__title">
+      <v-toolbar-title  class="text-uppercase toolbar__title white--text">
         <span class="font-weight-light">Egosha</span>
-        <span>IsHere</span>
+        <span>news</span>
       </v-toolbar-title>
 
       <v-spacer />
 
-      <v-btn text color="grey">
+      <v-btn text class="white--text">
         <span>Sign Out</span>
         <v-icon> mdi-login </v-icon>
       </v-btn>
     </v-app-bar>
 
 
-    <v-navigation-drawer v-model="isOpen" app class="primary">
+    <v-navigation-drawer v-model="isOpen" app color="#353e52" >
       <v-layout class="mt-16" column align-center>
         <v-flex>
-          <v-avatar size="100">
-            <img src="/cat.png" alt="">
-          </v-avatar>
-          <div style="text-align: center" class="white--text subheading mt-1">
-            eg0sha
-          </div>
+          <img class="navbar__logo" src="/world-news.png" alt="">
         </v-flex>
       </v-layout>
 
@@ -63,10 +58,7 @@ export default {
     return {
       isOpen: false,
       links: [
-        {icon: 'dashboard', text: 'Dashboard', route: '/'},
-        {icon: 'currency_exchange', text: 'Exchange', route: '/exchange'},
-        {icon: 'analytics', text: 'Charts', route: '/charts'},
-        {icon: 'ssid_chart', text: 'MultiChart Chart.js', route: '/multicharts'},
+        {icon: 'newspaper', text: 'News', route: '/'},
         {icon: 'emoji_symbols', text: 'Sandbox', route: '/sandbox'},
       ]
     };
@@ -87,4 +79,14 @@ export default {
 /* .navbar__container{
   margin-top: 30px;
 } */
+
+.navbar__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.bar__text_color {
+  color: #ffffff;
+}
+
 </style>
