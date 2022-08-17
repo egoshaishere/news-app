@@ -1,7 +1,12 @@
 <template>
   <div>
-    <v-btn v-on:click="click">test</v-btn>
+    <v-btn class="btn" v-on:click="click">test</v-btn>
 
+
+
+    <v-btn class="btn-outlined" outlined v-on:click="click">
+      <div class="text-outlined">test</div>
+    </v-btn>
 
     <div class="test" v-if="prz"></div>
   </div>
@@ -33,5 +38,21 @@ export default {
   width: 300px;
   height: 150px;
 }
+
+.btn {
+  background-color: #505fce;
+}
+
+.btn-outlined {
+  /* color: #505fce;
+  background: #505fce; */
+  border-color: #505fce;
+  text-decoration-color: #505fce;
+}
+
+.text-outlined {
+  color: white;
+}
+
 
 </style>
